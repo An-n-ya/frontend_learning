@@ -1,0 +1,7 @@
+dl{
+    display: flex;
+}
+dl dt{
+    width: auto;
+    padding-right: 50px;
+}
