@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: content-box;
+}
+.lay{
+    width: 960px;
+    margin: 0 auto;
+}
+.lay{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    float: left;
+    margin-left: 0;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav{
+    margin-left: 700px;
+}
+.nav a{
+    color: white;
+}
+.banner{
+    position: relative;
+    top: 42px;
+    left: 0px;
+    border: none;
+    width: 100%;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+    background-color: yellowgreen;
+}
+.select{
+    margin-left: 700px;
+    margin-top: 200px;
+}
+.select ul li{
+    display: inline-block;
+    list-style-type: none;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+}
+.select ul li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 20px;
+    background-color: rgba(153, 205, 50, 0.644);
+    text-align: center;
+}
+.main ul{
+    top: 60px;
+    position: relative;
+    padding-left: 0;
+    margin-top: 0;
+}
+.main li{
+    float: left;
+    list-style-type: none;
+    width: 80px;
+}
+.main li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 90%;
+    line-height: 3;
+    background-color: rgba(185, 179, 179, 0.356);
+    color: black;
+    text-align: center;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 10px;
+}
+.line p{
+    border: gray;
+}

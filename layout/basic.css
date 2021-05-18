@@ -1,0 +1,27 @@
+.wrapper {
+    padding: 15px 20px;
+    border: 1px dashed #ff6c60;
+}
+.left {
+    width: 120px;
+    border: 5px solid #ddd;
+}
+.right {
+    margin-left: 20px;
+    border: 5px solid #ddd;
+}
+
+.wrapper{
+    box-sizing: content-box;
+    font-size: 0;
+}
+.wrapper .left,
+.wrapper .right{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.wrapper .right{
+    width: calc(100% - 140px);
+}
