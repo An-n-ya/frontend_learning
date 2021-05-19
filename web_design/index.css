@@ -132,7 +132,7 @@ body{
 }
 .box3{
     position: absolute;
-    background: no-repeat left/cover url(/assets/BG2.png);
+    background: no-repeat left/cover url(https://ankh04.github.io/frontend_learning/web_design/assets/BG2.png);
     top: 1713px;
     height: 800px;
     width: 100%;
