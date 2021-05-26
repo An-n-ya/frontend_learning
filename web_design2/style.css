@@ -1,5 +1,12 @@
+@font-face {
+    font-family: myriad;
+    src: url(https://github.com/ankh04/frontend_learning/raw/main/web_design2/MyriadPro-Regular-14.otf);
+}
 body{
+    position: relative;
+    display: inline;
     margin: 0;
+    font-family: myriad;
 }
 .menu .primary{
     position: fixed;
@@ -61,10 +68,11 @@ body{
     height: 21%;
 }
 .menu .secondary .part1 .content a{
+    position: relative;
     display: block;
     margin-bottom: 6%;
     text-decoration: none;
-    color: #b7c0cd;
+    color: rgba(183,192,205,0.7);
 }
 .menu .secondary .part1 .content a div{
     display: block;
@@ -83,6 +91,280 @@ body{
     top: 24%;
     left: 30px;
     width: 190px;
-    height: 3%;
+    height: 1%;
     border-bottom: solid #2c3545 1px;
+}
+.menu .secondary .part2 .title{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 30px;
+    width: 190px;
+    height: 7%;
+    align-items: center;
+}
+.menu .secondary .part2 .title p{
+    display: inline-block;
+    color: #5b6779;
+}
+.menu .secondary .part2 .title img{
+    display: inline-block;
+    color: #5b6779;
+    position: absolute;
+    right: 0;
+}
+.menu .secondary .part2 .content{
+    position: absolute;
+    top: 32%;
+    left: 30px;
+    width: 190px;
+    height: 21%;
+}
+.menu .secondary .part2 .content a{
+    position: relative;
+    display: block;
+    margin-bottom: 6%;
+    text-decoration: none;
+    color: rgba(183,192,205,0.7);
+}
+.menu .secondary .part2 .line{
+    position: absolute;
+    top: 46%;
+    left: 30px;
+    width: 190px;
+    height: 1%;
+    border-bottom: solid #2c3545 1px;
+}
+.menu .secondary .part3 .title{
+    display: flex;
+    position: absolute;
+    top: 47%;
+    left: 30px;
+    width: 190px;
+    height: 7%;
+    align-items: center;
+}
+.menu .secondary .part3 .title p{
+    display: inline-block;
+    color: #5b6779;
+}
+.menu .secondary .part3 .title img{
+    display: inline-block;
+    color: #5b6779;
+    position: absolute;
+    right: 0;
+}
+.menu .secondary .part3 .content{
+    position: absolute;
+    top: 54%;
+    left: 30px;
+    width: 190px;
+    height: 21%;
+}
+.menu .secondary .part3 .content a{
+    position: relative;
+    display: block;
+    margin-bottom: 6%;
+    text-decoration: none;
+    color: rgba(183,192,205,0.7);
+}
+.menu .secondary .part3 .content a img{
+    position: absolute;
+    left: -40px;
+    z-index: -2;
+    visibility: hidden;
+}
+.menu .secondary .part2 .content a img{
+    position: absolute;
+    left: -40px;
+    z-index: -2;
+    visibility: hidden;
+}
+.menu .secondary .part3 .content a:hover{
+    color: rgb(183,192,205);
+}
+.menu .secondary .part3 .content a:hover img{
+    visibility: visible;
+}
+.menu .secondary .part2 .content a:hover img{
+    visibility: visible;
+}
+.menu .secondary .part2 .content a:hover{
+    color: rgb(183,192,205);
+}
+.menu .secondary .part1 .content a:hover{
+    color: rgb(183,192,205);
+}
+.menu .secondary .bottom{
+    position: absolute;
+    bottom: 0;
+}
+.menu .secondary .bottom img{
+    position: absolute;
+    margin-left: 30px;
+}
+.menu .secondary .bottom img:nth-of-type(1){
+    bottom: 40px;
+}
+.menu .secondary .bottom img:nth-of-type(2){
+    bottom: 40px;
+}
+.menu .secondary .bottom .content{
+    position: absolute;
+    display: flex;
+    margin-left: 30px;
+    bottom: 100px;
+    width: 190px;
+    height: 7%;
+
+}
+.menu .secondary .bottom .content p{
+    color: rgb(183,192,205);
+    font-size: smaller;
+}
+.menu .secondary .bottom .content .portion{
+    position: absolute;
+    right: 0;
+    width: 70px;
+}
+.menu .secondary .bottom .content .portion p{
+    display: inline-block;
+}
+.menu .secondary .bottom .content .portion .total{
+    color: rgb(183,192,205,0.7);
+}
+.messages{
+    position: relative;
+    margin-left: 350px;
+    height: 100%;
+    width: calc(100%-350px);
+}
+.messages .title{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 350px;
+    width: 100%;
+    height: 70px;
+    border-bottom: solid 1px #e6e9eb;
+    justify-items: center;
+    background-color: white;
+}
+.messages .title p{
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+.messages .title .profile img{
+    position: fixed;
+    display: inline-block;
+    top: 10px;
+    right: 200px;
+}
+.messages .title .profile img:nth-of-type(2){
+    right: 203px;
+    top: 43px;
+}
+.messages .title .profile img:nth-of-type(3){
+    right: 40px;
+    top: 35px;
+}
+.messages .title .profile .name{
+    position: fixed;
+    top: 0px;
+    font-size: 20px;
+    right: 100px;
+    color: #2399f1;
+}
+.messages .title .profile .status{
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    font-size: 14px;
+    color: rgb(183,192,205);
+}
+.messages .search{
+    position: fixed;
+    display: flex;
+    width: 400px;
+    height: 60px;
+    border-bottom: solid 1px #e6e9eb;
+    border-right: solid 1px #e6e9eb;
+    margin-top: 70px;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+.messages .search .block{
+    display: block;
+    width: 80%;
+    height: 50%;
+    border: solid 1px #e6e9eb;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+.messages .search .block .input{
+    height: 30px;
+    width: 290px;
+    border: none;
+}
+.messages .user_name{
+    position: fixed;
+    display: flex;
+    margin-top: 70px;
+    margin-left: 400px;
+    height: 60px;
+    width: calc(100%-400px);
+    border-bottom: solid 1px #e6e9eb;
+    justify-items: center;
+    align-items: center;
+}
+.messages .user_name p{
+    margin-left: 30px;
+}
+.messages .user_name .status{
+    display: block;
+    margin-left: 10px;
+}
+.messages .user_info{
+    position: relative;
+    display: grid;
+    grid: auto-flow dense;
+    grid-template-rows: repeat(7, 120px);
+    gap: 0;
+    top: 130px;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 1000px;
+    width: 400px;
+    border-right: solid 1px #e6e9eb;
+    z-index: -1;
+}
+.messages .user_info .user{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    border-bottom: solid 1px #e6e9eb;
+}
+.messages .user_info img{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.messages .user_info p:nth-of-type(1){
+    position: absolute;
+    left: 90px;
+    top: 2px;
+}
+.messages .user_info .company{
+    position: absolute;
+    top: 28px;
+    left: 90px;
+    color: rgb(183,192,205);
+    font-size: 10px;
+}
+.messages .user_info .time{
+    position: absolute;
+    right: 20px;
+    top: 2px;
 }
