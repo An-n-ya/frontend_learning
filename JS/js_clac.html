@@ -26,8 +26,16 @@
              * parseFloat(document.getElementById("second-number").value)
         }
         document.getElementById("divide-btn").onclick = function(){
-            document.getElementById("result").innerHTML = parseFloat(document.getElementById("first-number").value)
+            if (document.getElementById("second-number").value == '0'){
+                console.log("connot devide zero");
+            } else if((parseFloat(document.getElementById("second-number").value) == NaN) || 
+                (parseFloat(document.getElementById("first-number").value) == NaN)){
+                    console.log("Input must be number");
+            }else{
+                document.getElementById("result").innerHTML = parseFloat(document.getElementById("first-number").value)
              / parseFloat(document.getElementById("second-number").value)
+            }
+            
         }
     </script>
 </body>
